@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="439.0" prefWidth="570.0" style="-fx-background-color: #434347;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerLogin">
+    <children>
+        <PasswordField fx:id="password" layoutX="238.0" layoutY="219.0" promptText="Password" style="-fx-background-color: #FE6B38;">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </PasswordField>
+        <TextField fx:id="username" layoutX="238.0" layoutY="152.0" promptText="Username" style="-fx-background-color: #FE6B38;">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="signup" layoutX="483.0" layoutY="24.0" mnemonicParsing="false" onAction="#onClickActionsignup" style="-fx-background-color: #FE6B38;" text="Sign Up" />
+        <Button fx:id="login" layoutX="274.0" layoutY="320.0" mnemonicParsing="false" onAction="#onClickActionlogin" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #FE6B38;" text="Log In">
+            <font>
+                <Font size="16.0" />
+            </font></Button>
+        <Text fill="#9e5f07" layoutX="238.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+            <font>
+                <Font name="Californian FB" size="15.0" />
+            </font>
+        </Text>
+        <CheckBox fx:id="rememberme" layoutX="238.0" layoutY="268.0" mnemonicParsing="false" onAction="#onCliackActionrememberme" opacity="0.76" prefHeight="17.0" prefWidth="108.0" text="Remember Me" textFill="#c6891f">
+            <font>
+                <Font name="Californian FB" size="12.0" />
+            </font>
+        </CheckBox>
+        <Text fill="#9e5f07" layoutX="242.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+            <font>
+                <Font name="Californian FB" size="15.0" />
+            </font>
+        </Text>
+        <Button fx:id="forgotpass" layoutX="338.0" layoutY="267.0" mnemonicParsing="false" onAction="#onClickActionforgotpass" prefHeight="19.0" prefWidth="86.0" style="-fx-background-color: #FE6B38;" text="Forgot password?" textAlignment="CENTER">
+            <font>
+                <Font name="System Italic" size="9.0" />
+            </font>
+        </Button>
+      <AmbientLight color="CHARTREUSE" layoutX="37.0" layoutY="134.0" lightOn="true" />
+      <AnchorPane layoutX="-16.0" layoutY="-6.0" prefHeight="445.0" prefWidth="152.0" style="-fx-background-color: #FE6B38;" />
+      <Text layoutX="198.0" layoutY="82.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="66.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.0784313753247261" green="0.1921568661928177" red="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9969465648854962">
+                     <color>
+                        <Color blue="0.01600000075995922" green="0.40799999237060547" opacity="0.9299308061599731" red="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.01600000075995922" green="0.40799999237060547" opacity="0.9299308061599731" red="0.800000011920929" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+    </children>
+    <effect>
+        <Glow />
+    </effect>
+</AnchorPane>

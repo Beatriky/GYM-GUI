@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerTrainerCheckOut1">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="188.0" style="-fx-background-color: #F98259;">
+         <children>
+            <TableView fx:id="avgtable" layoutX="14.0" layoutY="120.0" prefHeight="230.0" prefWidth="156.0">
+              <columns>
+                <TableColumn fx:id="colid" prefWidth="55.20001411437988" text="ID" />
+                <TableColumn fx:id="avgrate" prefWidth="99.20000457763672" text="Avg Rating" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="228.0" layoutY="78.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TableView fx:id="table1" layoutX="200.0" layoutY="147.0" prefHeight="202.0" prefWidth="356.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+        <columns>
+          <TableColumn fx:id="colname" prefWidth="86.60000610351562" text="Name" />
+          <TableColumn fx:id="colemail" prefWidth="97.4000244140625" text="Email" />
+            <TableColumn fx:id="colhour" prefWidth="76.5999755859375" text="Workhours" />
+            <TableColumn fx:id="colrating" prefWidth="117.60000610351562" text="Last Rating" />
+        </columns>
+      </TableView>
+      <Text layoutX="234.0" layoutY="99.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer Details" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

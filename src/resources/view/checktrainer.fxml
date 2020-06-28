@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerTrainerCheckOut">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="168.0" style="-fx-background-color: #F98259;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" prefHeight="36.0" prefWidth="66.0" style="-fx-border-color: #FF5733;" text="Back" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="247.0" layoutY="71.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7490196228027344" green="0.1921568661928177" blue="0.0784313753247261" />
+                     </color></Stop>
+                  <Stop offset="0.9969465648854962">
+                     <color>
+                        <Color red="0.800000011920929" green="0.40799999237060547" blue="0.01600000075995922" opacity="0.9299308061599731" />
+                     </color></Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.40799999237060547" blue="0.01600000075995922" opacity="0.9299308061599731" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TableView fx:id="table1" layoutX="190.0" layoutY="123.0" prefHeight="202.0" prefWidth="356.0" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="123.0">
+        <columns>
+          <TableColumn fx:id="colname" prefWidth="97.0" text="Name" />
+          <TableColumn fx:id="colemail" prefWidth="117.20001220703125" text="Email" />
+            <TableColumn fx:id="colhour" prefWidth="86.0" text="Workhours" />
+            <TableColumn fx:id="colrating" prefWidth="81.19998168945312" text="Last Rating" />
+        </columns>
+      </TableView>
+      <Text layoutX="247.0" layoutY="104.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer Details" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

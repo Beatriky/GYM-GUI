@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="beatricdbase" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>model.Clients</class>
+        <class>model.Diets</class>
+        <class>model.Exercises</class>
+        <class>model.Gym</class>
+        <class>model.Managers</class>
+        <class>model.Subscription</class>
+        <class>model.Trainers</class>
+        <class>model.Users</class>
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/gym"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="root"/>
+            <property name="eclipselink.jdbc.password" value="bb140820  "/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="gymdb1"/>
+    <persistence-unit name="gym1"/>
+</persistence>

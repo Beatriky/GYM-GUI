@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerNotifTrainer">
+   <children>
+      <Text layoutX="271.0" layoutY="111.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="22.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="-11.0" prefHeight="411.0" prefWidth="169.0" style="-fx-background-color: #CC6EBF;">
+         <children>
+            <Button fx:id="back" layoutX="8.0" layoutY="32.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-border-color: #641B5A;" text="Back" />
+            <ComboBox fx:id="cbname" layoutX="19.0" layoutY="156.0" prefHeight="31.0" prefWidth="132.0" promptText="Name" style="-fx-border-color: #CC6EBF;" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="265.0" layoutY="83.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6213592233009708" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#ddabd1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="214.0" layoutY="144.0" prefHeight="179.0" prefWidth="340.0" style="-fx-border-color: #CC6EBF;">
+        <columns>
+          <TableColumn fx:id="colnotif" prefWidth="233.79998779296875" text="Notif" />
+          <TableColumn fx:id="colname" prefWidth="107.80001831054688" text="Client Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="refresh" layoutX="363.0" layoutY="346.0" mnemonicParsing="false" onAction="#onclickefresh" style="-fx-border-color: #CC6EBF;" text="Refresh" />
+   </children>
+</AnchorPane>

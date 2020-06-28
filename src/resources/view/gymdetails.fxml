@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerGymDetails">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="406.0" prefWidth="147.0" style="-fx-background-color: #DAF7A6;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-background-color: #DAF7A6; -fx-border-color: #93AA1F;" text="Back" />
+         </children></AnchorPane>
+      <Text layoutX="167.0" layoutY="71.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Text>
+      <Text layoutX="167.0" layoutY="106.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="platinumdet" layoutX="44.0" layoutY="177.0" mnemonicParsing="false" onAction="#platinumdet" prefHeight="114.0" prefWidth="162.0"  text="Button">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagines/gymhallplatinum.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="golddet" layoutX="315.0" layoutY="177.0" mnemonicParsing="false" onAction="#onClickActiongolddet" prefHeight="114.0" prefWidth="162.0"  text="Button">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagines/gymhallgold.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="290.0" layoutY="158.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="Gold" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="157.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="Platinum" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
