@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerTrainerDetails">
+   <children>
+      <Text layoutX="177.0" layoutY="81.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Text>
+      <AnchorPane layoutY="-4.0" prefHeight="406.0" prefWidth="168.0" style="-fx-background-color: #DAF7A6;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-background-color: #DAF7A6; -fx-border-color: #93AA1F;" text="Back" />
+            <AmbientLight color="CHARTREUSE" layoutX="112.0" layoutY="38.0" lightOn="true" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="183.0" layoutY="102.0" lineSpacing="1.0" stroke="#45ee0d" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer details" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#436f32" />
+                  <Stop color="#72e42bf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="78.0" layoutY="132.0" prefHeight="230.0" prefWidth="452.0" style="-fx-background-color: #DAF7A6;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="132.0">
+        <columns>
+          <TableColumn fx:id="colnume" prefWidth="130.0" text="Trainer Name" />
+          <TableColumn fx:id="colore" prefWidth="82.0" text="Working Hours" />
+            <TableColumn fx:id="colfeed" prefWidth="252.0" text="Feedback" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

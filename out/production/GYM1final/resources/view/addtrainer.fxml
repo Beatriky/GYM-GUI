@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerAddTrainer">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="188.0" style="-fx-background-color: #ff5050;" />
+      <Text layoutX="300.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="65.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#fc5d55" />
+                  <Stop color="#8d1806" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.8252427184466019" endY="0.44660194174757284" startX="0.4368932038834952" startY="0.6601941747572815">
+               <stops>
+                  <Stop color="#366808" />
+                  <Stop color="#086643" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Text>
+      <Text fill="#fb7b7b" layoutX="337.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Trainers">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fn" layoutX="203.0" layoutY="143.0" prefHeight="33.0" prefWidth="146.0" promptText="First Name" style="-fx-border-color: ff5050;" />
+      <TextField fx:id="ln" layoutX="203.0" layoutY="184.0" prefHeight="33.0" prefWidth="146.0" promptText="Last Name" style="-fx-border-color: ff5050;" />
+      <TextField fx:id="telnumber" layoutX="203.0" layoutY="230.0" prefHeight="33.0" prefWidth="146.0" promptText="Phone" style="-fx-border-color: ff5050;" />
+      <TextField fx:id="email" layoutX="426.0" layoutY="143.0" prefHeight="33.0" prefWidth="146.0" promptText="Email" style="-fx-border-color: ff5050;" />
+      <TextField fx:id="usern" layoutX="426.0" layoutY="184.0" prefHeight="33.0" prefWidth="146.0" promptText="Username" style="-fx-border-color: ff5050;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="426.0" layoutY="230.0" prefHeight="33.0" prefWidth="146.0" promptText="Password" style="-fx-border-color: ff5050;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="add" layoutX="364.0" layoutY="309.0" mnemonicParsing="false" onAction="#onClickActionadd" style="-fx-border-color: ff5050;" text="Add" textFill="#e80606">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

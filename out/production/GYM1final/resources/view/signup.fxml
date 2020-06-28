@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="605.0" style="-fx-background-color: #434347;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSignup">
+
+    <children>
+      <AnchorPane prefHeight="440.0" prefWidth="117.0" style="-fx-background-color: #800000;" />
+        <Button fx:id="SIGNUP" layoutX="317.0" layoutY="349.0" mnemonicParsing="false" onAction="#onClickActionSIGNUP" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: #800000;" text="Sign Up">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <Reflection fraction="0.48" topOpacity="0.11" />
+         </effect></Button>
+        <TextField fx:id="usern" layoutX="411.0" layoutY="126.0" prefHeight="40.0" prefWidth="166.0" promptText="Username" style="-fx-background-color: #800000;">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+         <effect>
+            <Bloom />
+         </effect></TextField>
+        <PasswordField fx:id="password" layoutX="411.0" layoutY="182.0" prefHeight="40.0" prefWidth="166.0" promptText="Password" style="-fx-background-color: #800000;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect></PasswordField>
+        <Button fx:id="LOGIN" layoutX="22.0" layoutY="18.0" mnemonicParsing="false" onAction="#onClickActionLOGIN" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: #434347; -fx-border-color: #800000;" text="Back" textFill="#e10404" />
+        <TextField fx:id="telnumber" layoutX="126.0" layoutY="218.0" promptText="Phone Number" style="-fx-background-color: #800000;">
+         <effect>
+            <Bloom />
+         </effect></TextField>
+        <TextField fx:id="email" blendMode="SRC_ATOP" layoutX="126.0" layoutY="262.0" promptText="Email" style="-fx-background-color: #800000;">
+         <effect>
+            <Bloom />
+         </effect></TextField>
+        <TextField fx:id="ln" layoutX="126.0" layoutY="171.0" promptText="Last Name" style="-fx-background-color: #800000;">
+         <effect>
+            <Bloom />
+         </effect></TextField>
+        <TextField fx:id="fn" layoutX="126.0" layoutY="126.0" promptText="First Name" style="-fx-background-color: #800000;">
+         <effect>
+            <Bloom />
+         </effect></TextField>
+        <ComboBox fx:id="comboboxloc" layoutX="411.0" layoutY="242.0" prefHeight="40.0" prefWidth="166.0" promptText="Choose a gym hall" style="-fx-background-color: #800000;-fx-text-fill: #FFF2ED;">
+         <effect>
+            <Bloom threshold="0.69" />
+         </effect></ComboBox>
+        <CheckBox fx:id="checkboximtrainer" layoutX="436.0" layoutY="307.0" mnemonicParsing="false" onAction="#onClickActioncheckboximtrainer" text="I am a trainer" textFill="#ee0202">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </CheckBox>
+      <Text layoutX="234.0" layoutY="75.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.2441459149122">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="66.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.54" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#e00202f2" />
+                  <Stop color="#570404" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="234.0" layoutY="97.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" textAlignment="CENTER" wrappingWidth="265.2441459149122">
+         <effect>
+            <Bloom threshold="0.54" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#e00202f2" />
+                  <Stop color="#570404" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="25.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

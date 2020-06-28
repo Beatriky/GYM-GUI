@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerTrainer">
+   <children>
+      <Text layoutX="285.0" layoutY="77.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6213592233009708" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#ddabd1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane prefHeight="400.0" prefWidth="235.0" style="-fx-background-color: #CC6EBF;">
+         <children>
+            <Button fx:id="checkme" layoutX="49.0" layoutY="325.0" mnemonicParsing="false" onAction="#onClickActioncheckme" prefHeight="31.0" prefWidth="119.0" style="-fx-border-color: #641B5A;" text="Check me!" />
+            <Button fx:id="custom" layoutX="48.0" layoutY="134.0" mnemonicParsing="false" onAction="#onClickActioncustom" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #641B5A;" text="Customers" />
+            <Button fx:id="addnewdiet" layoutX="48.0" layoutY="200.0" mnemonicParsing="false" onAction="#onClickActionaddnewdiet" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #641B5A;" text="Add a diet" />
+            <Button fx:id="back" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" prefHeight="27.0" prefWidth="54.0" style="-fx-border-color: #641B5A;" text="Back" />
+            <Button fx:id="seeprofile" layoutX="49.0" layoutY="76.0" mnemonicParsing="false" onAction="#onClickActionseeprofile" prefHeight="31.0" prefWidth="119.0" style="-fx-border-color: #641B5A;" text="My profile!" />
+            <Button fx:id="addex" layoutX="48.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClickActionaddex" prefHeight="31.0" prefWidth="119.0" style="-fx-border-color: #641B5A;" text="Add exercises" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="285.0" layoutY="111.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="22.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ComboBox fx:id="cbclient" layoutX="343.0" layoutY="157.0" onAction="#onClickActioncbclient" prefWidth="150.0" promptText="Client" style="-fx-border-color: #641B5A;" />
+      <ComboBox fx:id="cbdiet" layoutX="343.0" layoutY="244.0" onAction="#onClickActioncbdiet" prefWidth="150.0" promptText="Diet" style="-fx-border-color: #641B5A;" />
+      <Button fx:id="givediet" layoutX="374.0" layoutY="307.0" mnemonicParsing="false" onAction="#onClickActiongivediet" prefHeight="34.0" prefWidth="91.0" style="-fx-border-color: #641B5A;" text="Assign!" />
+      <ComboBox fx:id="cbex" layoutX="343.0" layoutY="200.0" prefWidth="150.0" promptText="Exercise" style="-fx-border-color: #641B5A;" />
+   </children>
+</AnchorPane>

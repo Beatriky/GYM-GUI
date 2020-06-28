@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerPlan">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="165.0" style="-fx-background-color: #FF5733;">
+         <children>
+            <ComboBox fx:id="cbname" layoutX="16.0" layoutY="169.0" prefHeight="31.0" prefWidth="133.0" promptText="Your Name" />
+            <ComboBox fx:id="cbday" layoutX="16.0" layoutY="112.0" prefHeight="31.0" prefWidth="133.0" promptText="Day" />
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickback" text="Back" />
+            <Button fx:id="load" layoutX="57.0" layoutY="230.0" mnemonicParsing="false" onAction="#onactionload" text="Load" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="237.0" layoutY="270.0" prefHeight="108.0" prefWidth="286.0" style="-fx-border-color: #FF5733;">
+        <columns>
+            <TableColumn fx:id="coldiet" prefWidth="109.4000244140625" text="Diet" />
+            <TableColumn fx:id="coldiedet" prefWidth="174.60000610351562" text="Diet Details" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableex" layoutX="237.0" layoutY="162.0" prefHeight="108.0" prefWidth="286.0" style="-fx-border-color: #FF5733;">
+        <columns>
+            <TableColumn fx:id="colex" prefWidth="167.20001220703125" style="border: #FF5733;" text="Exercise" />
+            <TableColumn fx:id="coltime" prefWidth="116.80001831054688" text="Mins" />
+        </columns>
+      </TableView>
+      <Text layoutX="237.0" layoutY="77.0" lineSpacing="1.0" stroke="#bc621e" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="237.0" layoutY="111.0" lineSpacing="1.0" stroke="#bc621e" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercise plan" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

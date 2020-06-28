@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="392.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerAddDiet">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #C460D8;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-border-color: #C460D8;" text="Back" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="215.0" layoutY="78.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="216.0" layoutY="112.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="Make a diet!" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="diettype" layoutX="247.0" layoutY="153.0" onAction="#onClickActiondiettype" promptText="Diet Type" style="-fx-border-color: #C460D8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="details" layoutX="247.0" layoutY="211.0" onDragDetected="#onClickActiondetails" prefHeight="102.0" prefWidth="202.0" promptText="Diet details(max 310 chars)" style="-fx-border-color: #C460D8;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="adddiet" layoutX="308.0" layoutY="345.0" mnemonicParsing="false" onAction="#onClickActionadddiet" style="-fx-border-color: #C460D8;" text="Add Diet" />
+   </children>
+</AnchorPane>

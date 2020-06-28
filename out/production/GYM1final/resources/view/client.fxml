@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerClient">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="245.0" style="-fx-background-color: F98259;">
+         <children>
+            <Button fx:id="clientsub" layoutX="56.0" layoutY="76.0" mnemonicParsing="false" onAction="#onClickActionclientsub" prefHeight="53.0" prefWidth="121.0" text="Subscription" />
+            <Button fx:id="feedback" layoutX="59.0" layoutY="221.0" mnemonicParsing="false" onAction="#onClickActionfeedback" prefHeight="53.0" prefWidth="115.0" text="Feedback" />
+            <Button fx:id="checktrainers" layoutX="59.0" layoutY="147.0" mnemonicParsing="false" onAction="#onClickActionchecktrainers" prefHeight="53.0" prefWidth="115.0" text="Trainers" />
+            <Button fx:id="rate" layoutX="59.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickActionrate" prefHeight="53.0" prefWidth="115.0" text="Rate the trainers" />
+            <Button fx:id="logout" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionlogout" style="-fx-background-color: F98259; -fx-border-color: #C83B05;" text="Log Out" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="273.0" layoutY="78.0" lineSpacing="1.0" stroke="#d71111" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="281.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#cd3b3b" layoutX="328.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Gym!">
+         <font>
+            <Font name="Copperplate Gothic Light" size="15.0" />
+         </font></Text>
+      <Text layoutX="277.0" layoutY="112.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" textAlignment="CENTER" wrappingWidth="273.244140625">
+         <effect>
+            <Bloom threshold="0.54" />
+         </effect>
+         <fill>
+            <LinearGradient endX="0.5194174757281553" endY="0.6893203883495146" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#e00202f2" />
+                  <Stop color="#a43716" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="explan" layoutX="362.0" layoutY="236.0" mnemonicParsing="false" onAction="#onClickActionexplan" prefHeight="71.0" prefWidth="115.0" style="-fx-border-color: F98259;" text="Exercise Plan">
+         <effect>
+            <Bloom threshold="0.97" />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

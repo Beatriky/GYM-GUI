@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerCustomerDetailsT">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="190.0" style="-fx-background-color: CF55E1;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-border-color: A733B8; -fx-background-color: CF55E1;" text="Back" />
+         </children></AnchorPane>
+      <Text layoutX="245.0" layoutY="71.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="300.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="245.0" layoutY="106.0" lineSpacing="1.0" smooth="false" stroke="#a82bdd" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer List" textAlignment="CENTER" wrappingWidth="300.244140625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#4d066b" />
+                  <Stop color="#d181dd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableinfo" layoutX="234.0" layoutY="142.0" prefHeight="200.0" prefWidth="311.0">
+        <columns>
+          <TableColumn fx:id="colname" prefWidth="102.0" text="Name" />
+          <TableColumn fx:id="colemail" prefWidth="108.0" text="Email" />
+            <TableColumn fx:id="coldiet" prefWidth="100.0" text="Diet Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

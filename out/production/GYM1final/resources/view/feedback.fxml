@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerFeedback">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="400.0" prefWidth="170.0" style="-fx-background-color: #F98259;">
+         <children>
+            <Text fill="#723d05" layoutX="16.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your trainer:" />
+            <ComboBox fx:id="cbname" layoutX="10.0" layoutY="193.0" onAction="#onClickActioncbname" prefWidth="150.0" promptText="Trainer" style="-fx-border-color: #FF5733;" />
+            <Button fx:id="backfeedback" layoutX="13.0" layoutY="16.0" mnemonicParsing="false" onAction="#onClickActionbackfeedback" style="-fx-border-color: #FF5733;" text="Back" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="194.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send us your feedback!" textAlignment="CENTER" wrappingWidth="383.84765625">
+         <font>
+            <Font name="Copperplate Gothic Light" size="21.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.4563106796116505" startX="0.558252427184466" startY="0.19902912621359223">
+               <stops>
+                  <Stop color="#f29940" />
+                  <Stop color="#f29940" offset="0.007246376811594203" />
+                  <Stop color="#e12929" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#c36518" layoutX="204.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your opinion matters to us!" textAlignment="CENTER" wrappingWidth="363.84765625">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="253.0" layoutY="61.0" lineSpacing="1.0" stroke="#bc621e" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#723d05" layoutX="218.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send a message:" />
+      <Button fx:id="send" layoutX="344.0" layoutY="332.0" mnemonicParsing="false" onAction="#onClickActionSend" prefHeight="41.0" prefWidth="65.0" style="-fx-border-color: #FF5733;" text="Send">
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </Button>
+      <TextArea fx:id="feedback" layoutX="220.0" layoutY="193.0" onDragDetected="#onClickActionfeedback" prefHeight="128.0" prefWidth="315.0" promptText="Write feedback" style="-fx-border-color: F98259;" />
+   </children>
+</AnchorPane>

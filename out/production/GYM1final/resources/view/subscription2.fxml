@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSubscription2">
+   <children>
+      <Text layoutX="249.0" layoutY="83.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.04" color="#7c470b" height="73.87" radius="34.88" width="67.65" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane prefHeight="400.0" prefWidth="178.0" style="-fx-background-color: #FF5733;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-border-color: #FF5733;" text="Back" />
+            <Button fx:id="traindet" layoutX="31.0" layoutY="136.0" mnemonicParsing="false" onAction="#onClickActiontraindet" style="-fx-border-color: #FF5733;" text="Trainer Details" />
+            <TableView fx:id="table" layoutX="9.0" layoutY="227.0" prefHeight="168.0" prefWidth="160.0">
+              <columns>
+                <TableColumn fx:id="colid" prefWidth="31.0" text="ID" />
+                <TableColumn fx:id="colname" prefWidth="79.0" text="Trainer Name" />
+                  <TableColumn fx:id="colrating" prefWidth="49.0" text="Rating" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="255.0" layoutY="118.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscription 2" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.04" color="#7c470b" height="73.87" radius="34.88" width="67.65" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="255.0" layoutY="153.0" lineSpacing="1.0" stroke="#901313" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your trainer" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.04" color="#7c470b" height="73.87" radius="34.88" width="67.65" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Copperplate Gothic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="next" layoutX="515.0" layoutY="346.0" mnemonicParsing="false" onAction="#onClickActionnext" prefHeight="42.0" prefWidth="59.0" style="-fx-border-color: #FF5733;" text="Next" />
+      <ComboBox fx:id="cbname" layoutX="278.0" layoutY="264.0" onAction="#onClickActioncbname" prefHeight="33.0" prefWidth="190.0" promptText="Choose a trainer" style="-fx-border-color: #FF5733;" />
+      <ComboBox fx:id="cbyourname" layoutX="278.0" layoutY="200.0" onAction="#onClickActioncbyourname" prefHeight="33.0" prefWidth="190.0" promptText="Select your name" style="-fx-border-color: #FF5733;" />
+   </children>
+</AnchorPane>

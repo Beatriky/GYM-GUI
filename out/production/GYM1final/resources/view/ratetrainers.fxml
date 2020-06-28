@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerRateTrainers">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="174.0" style="-fx-background-color: #F98259;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickActionback" style="-fx-border-color: #F98259;" text="Back" />
+            <ComboBox fx:id="cbname" layoutX="12.0" layoutY="126.0" prefWidth="150.0" promptText="Trainer Name" style="-fx-border-color: #F98259;" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="244.0" layoutY="71.0" lineSpacing="1.0" stroke="#bc621e" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="64.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="244.0" layoutY="113.0" lineSpacing="1.0" stroke="#bc621e" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate our trainers!" textAlignment="CENTER" wrappingWidth="265.244140625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="31.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.48" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3592233009708738" startY="0.3349514563106796">
+               <stops>
+                  <Stop color="#bf3114" />
+                  <Stop color="#d11b1ba0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="rate" layoutX="334.0" layoutY="306.0" mnemonicParsing="false" onAction="#onClickActionrate" prefHeight="47.0" prefWidth="85.0" style="-fx-border-color: #F98259;" text="Rate!" />
+      <TextField fx:id="textfield" layoutX="286.0" layoutY="217.0" onAction="#onClickActiontextfield" prefHeight="47.0" prefWidth="181.0" promptText="Insert a number between 1-10" style="-fx-border-color: #F98259;" />
+      <Text fill="#ae650b" layoutX="292.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a number from 1-10">
+         <font>
+            <Font name="Copperplate Gothic Light" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
